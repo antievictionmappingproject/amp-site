@@ -1,0 +1,10 @@
+<ul ng-controller="ActiveStateCtrl" class="nav nav-pills pull-right">
+  <li ng-class="{active: isActive('maps.ellis.sf')}">
+    <a ui-sref="maps.ellis.sf" ng-click="selectEllisCity('San Francisco')">San Francisco</a></li>
+  <li ng-class="{active: isActive('maps.ellis.la')}">
+    <a ui-sref="maps.ellis.la" ng-click="selectEllisCity('Los Angeles')">Los Angeles</a></li>
+  <li ng-class="{active: isActive('maps.ellis.sm')}">
+    <a ui-sref="maps.ellis.sm" ng-click="selectEllisCity('Santa Monica')">Santa Monica</a></li>
+</ul>
+
+<div ng-include="ellis.active.templateUrl" class="city-template"></div>

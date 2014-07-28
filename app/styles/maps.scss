@@ -1,0 +1,11 @@
+
+
+.leaflet-container {
+  @include make-md-column(6);
+  height: 300px;
+  width: 300px;
+}
+
+.maps-sidebar {
+  @include make-md-column(6);
+}
